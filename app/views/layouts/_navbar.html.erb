@@ -18,29 +18,21 @@
         <li><%= link_to "About", about_index_path %></li>
         <div class="btn-group">
           <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Add New Book
+            Add New
             <span class="caret"></span>
           </button>
           <ul class="dropdown-menu">
-            <li>
-              <a href="#">Action</a>
-            </li>
-            <li>
-              <a href="#">Another action</a>
-            </li>
-            <li>
-              <a href="#">Something else here</a>
-            </li>
-            <li role="separator" class="divider"></li>
-            <li>
-              <a href="#">Separated link</a>
+            <li> <%= link_to "Books", books_new_path %> </li>
+            <li> <%= link_to "Publishers", publishers_new_path %> </li>
+            <li> <%= link_to "Authors", authors_new_path %> </li>
+            <li> <%= link_to "Categories", categories_new_path %> </li>
             </li>
           </ul>
         </div>
     </ul>
-
   </div>
   <!-- /.navbar-collapse -->
 </div>
+
 <!-- /.container-fluid -->
 </nav>
