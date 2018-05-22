@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bookstore</title>
+    <title><%= @page_title ? @page_title : "Welcome"%> | The BookStore</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,6 +11,27 @@
 
   <body>
     <%= render 'layouts/navbar' %>
-    <%= yield %>
+    <%= render 'layouts/main' %>
+    <section id="main_page">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+          <%= yield %>
+          </div>
+          <div class="col-md-4">
+            <h1>test</h1>
+          </div>
+          </div>
+      </div>
+    </section>
+
+    <footer id="footer_page">
+
+      <div class="container">
+      <p>Copyrights &copy; 2018 All Rights Reserved by Arthur Truong</p>
+      </div>
+    </footer>
+
+
   </body>
 </html>
